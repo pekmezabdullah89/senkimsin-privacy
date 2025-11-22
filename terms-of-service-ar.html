@@ -5,33 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شروط الخدمة - من أنت</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Inter', 'Arial', sans-serif;
+            font-family: 'Inter', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
             background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
             color: white;
             text-align: right;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .container {
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
+            padding: 20px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
-        h1, h2 {
+        h1 {
             color: #8b5cf6;
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #8b5cf6;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        ul {
+            margin-bottom: 1rem;
+            padding-right: 1.5rem;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
         .back-btn {
             background: #8b5cf6;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             margin-bottom: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            max-width: 200px;
+            transition: background-color 0.2s, transform 0.1s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .back-btn:hover {
+            background: #7c3aed;
+        }
+        .back-btn:active {
+            transform: scale(0.98);
         }
         .disclaimer {
             background: rgba(255, 193, 7, 0.2);
@@ -39,12 +81,76 @@
             padding: 15px;
             border-radius: 8px;
             margin: 20px 0;
+            font-size: 0.95rem;
         }
-        ul {
-            padding-right: 20px;
+        strong {
+            font-weight: 600;
         }
-        li {
-            margin-bottom: 8px;
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+                margin-top: 1.25rem;
+            }
+            p, li {
+                font-size: 0.9rem;
+            }
+            ul {
+                padding-right: 1.25rem;
+            }
+            .back-btn {
+                width: 100%;
+                max-width: none;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+            .disclaimer {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 12px;
+            }
+            h1 {
+                font-size: 1.35rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            p, li {
+                font-size: 0.85rem;
+            }
+            .disclaimer {
+                padding: 10px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (hover: none) and (pointer: coarse) {
+            .back-btn {
+                min-height: 44px;
+            }
+            a {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -53,21 +159,25 @@
         <button class="back-btn" onclick="window.history.back()">← العودة</button>
         
         <h1>شروط الخدمة</h1>
-        <p><strong>آخر تحديث:</strong> 12 سبتمبر 2025</p>
+        <p><strong>آخر تحديث:</strong> 21 نوفمبر 2025</p>
 
         <div class="disclaimer">
             <h3>⚠️ تحذير مهم</h3>
-            <p>هذا التطبيق للأغراض الترفيهية فقط. النتائج المقدمة ليست علمية ولا يجب أن تؤثر على قرارات حياتك الواقعية. علم الأرقام والتنجيم يجب أن يستخدما كأدوات ترفيهية واكتشاف الذات.</p>
+            <p>هذا التطبيق للأغراض الترفيهية فقط. النتائج المقدمة ليست علمية ولا يجب أن تؤثر على قرارات حياتك الواقعية. التحليل الشخصي وتخطيط الروتين وميزات الإرشاد يجب أن تستخدم كأدوات ترفيهية واكتشاف الذات.</p>
         </div>
 
         <h2>1. وصف الخدمة</h2>
         <p>من أنت هو تطبيق ترفيهي يقدم الميزات التالية:</p>
         <ul>
-            <li><strong>تحليل الأرقام:</strong> حساب رقم الشخصية، مسار الحياة، دافع الروح</li>
-            <li><strong>ميزات التنجيم:</strong> خريطة الميلاد، تحليل البرج، مواضع الكواكب</li>
-            <li><strong>تحليل التوافق:</strong> توافق الحب، تحليل الزواج، تنجيم الأطفال</li>
+            <li><strong>تحليل الأرقام:</strong> حساب رقم الشخصية، مسار الحياة، دافع الروح، الأرقام المحظوظة، الألوان والأيام</li>
+            <li><strong>ميزات التحليل الشخصي:</strong> خريطة التحليل الشخصي، تحليل الملف الشخصي، مواضع الكواكب، تحليل مجالات الحياة، تحليل عوامل التوافق، شخصية روح الحيوان، مسارات الحياة</li>
+            <li><strong>تخطيط الروتين:</strong> روتينات يومية خاصة بالعمر وخطط عمل محددة الإطار الزمني</li>
+            <li><strong>تحليل التوافق:</strong> توافق الأسرة، تحليل الزواج، تحليل تطور الأطفال</li>
             <li><strong>التحليل المدعوم بالذكاء الاصطناعي:</strong> تحليل الشخصية المعزز بالذكاء الاصطناعي</li>
-            <li><strong>التصور ثلاثي الأبعاد:</strong> خريطة ميلاد تفاعلية ورسوم متحركة</li>
+            <li><strong>التصور ثلاثي الأبعاد:</strong> خريطة تحليل شخصي تفاعلية ورسوم متحركة</li>
+            <li><strong>ميزات الحظ والثروة:</strong> الأرقام المحظوظة، الألوان، الأيام والهدايا المفضلة</li>
+            <li><strong>التنبؤات المستقبلية:</strong> تنبؤات مخصصة سنوية وشهرية وأسبوعية ويومية</li>
+            <li><strong>الدافع والإلهام:</strong> اقتباسات تحفيزية مخصصة وفئات</li>
             <li><strong>دعم متعدد اللغات:</strong> خيارات اللغة التركية والإنجليزية والعربية</li>
             <li><strong>التطبيق المحمول:</strong> تطبيقات منصات Android و iOS</li>
         </ul>
@@ -78,7 +188,7 @@
             <li>يجب ألا تنتهك حقوق الآخرين</li>
             <li>يجب ألا تسيء استخدام التطبيق</li>
             <li>نتائج الحسابات لا يجب أن تستخدم في قرارات الحياة الواقعية</li>
-            <li><strong>تنجيم الأطفال:</strong> يمكنك إدخال معلومات الأطفال فقط لأطفالك</li>
+            <li><strong>تحليل تطور الأطفال:</strong> يمكنك إدخال معلومات الأطفال فقط لأطفالك</li>
             <li><strong>دقة البيانات:</strong> أنت مسؤول عن دقة وحداثة المعلومات المدخلة</li>
             <li><strong>المشاركة الاجتماعية:</strong> أنت مسؤول عن المحتوى الذي تشاركه</li>
             <li><strong>حد السن:</strong> المستخدمون تحت 13 يمكنهم الاستخدام تحت إشراف الوالدين</li>
@@ -161,7 +271,7 @@
         <h2>14. الأحكام المؤقتة</h2>
         <p>صحة هذه الشروط:</p>
         <ul>
-            <li><strong>تاريخ السريان:</strong> 12 سبتمبر 2025</li>
+            <li><strong>تاريخ السريان:</strong> 21 نوفمبر 2025</li>
             <li><strong>التحديثات:</strong> الشروط قد تحدث، التغييرات تعلن</li>
             <li><strong>القبول:</strong> تقبل هذه الشروط باستخدام التطبيق</li>
             <li><strong>القابلية للتقسيم:</strong> بطلان مادة واحدة لا يؤثر على الأخرى</li>
@@ -190,7 +300,10 @@
         <h2>17. شروط خاصة للتطبيق المحمول</h2>
         <p>قواعد إضافية لإصدار التطبيق المحمول:</p>
         <ul>
-            <li><strong>أذونات الجهاز:</strong> قد تحتاج إلى منح الأذونات اللازمة</li>
+            <li><strong>أذونات الجهاز:</strong> الوصول إلى المعرض (فقط لاختيار الصور، اختياري تماماً). التطبيق لا يتطلب إذن الكاميرا ولا يطلب الوصول إلى الكاميرا.</li>
+            <li><strong>اختيار الصور:</strong> يستخدم التطبيق HTML5 file input للسماح لك باختيار الصور من معرضك. لا يتطلب إذن الكاميرا. على المنصات الأصلية، قد يتم استخدام Capacitor Camera plugin كبديل لتجربة مستخدم أفضل (الوصول إلى المعرض فقط، لا يتطلب إذن الكاميرا).</li>
+            <li><strong>iOS:</strong> تطبيق iOS لا يطلب إذن الكاميرا. يتم طلب الوصول إلى المعرض فقط بشكل اختياري.</li>
+            <li><strong>Android:</strong> تطبيق Android لا يطلب إذن الكاميرا. يتم طلب الوصول إلى المعرض فقط بشكل اختياري.</li>
             <li><strong>التخزين:</strong> التطبيق يستخدم مساحة التخزين في جهازك</li>
             <li><strong>التحديثات:</strong> يجب قبول تحديثات التطبيق</li>
             <li><strong>الاستخدام دون اتصال:</strong> يمكنك الاستخدام بدون إنترنت</li>

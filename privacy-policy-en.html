@@ -1,44 +1,352 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy | Who Are You</title>
-  <meta name="description" content="Privacy policy and data usage information.">
-  <meta property="og:title" content="Privacy Policy | Who Are You">
-  <meta property="og:description" content="Data processing, retention and contact details.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pekmezabdullah89.github.io/senkimsin-privacy/privacy-policy-en.html">
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:0;padding:24px;line-height:1.6;background:#0f1021;color:#eef}
-    a{color:#a78bfa;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:880px;margin:0 auto}
-    .card{background:#17172f;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:20px;margin:16px 0}
-    .lang{font-size:14px;margin-bottom:12px}
-    .lang a{margin-right:12px}
-    h1{margin:8px 0 4px}
-    h2{margin:16px 0 8px;font-size:18px}
-  </style>
-  <link rel="alternate" hreflang="tr" href="/privacy-policy.html">
-  <link rel="alternate" hreflang="en" href="/privacy-policy-en.html">
-  <link rel="alternate" hreflang="ar" href="/privacy-policy-ar.html">
-  <link rel="canonical" href="https://pekmezabdullah89.github.io/senkimsin-privacy/privacy-policy-en.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Who Are You</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+            color: white;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        h1 {
+            color: #8b5cf6;
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #8b5cf6;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .back-btn {
+            background: #8b5cf6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            max-width: 200px;
+            transition: background-color 0.2s, transform 0.1s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .back-btn:hover {
+            background: #7c3aed;
+        }
+        .back-btn:active {
+            transform: scale(0.98);
+        }
+        strong {
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+                margin-top: 1.25rem;
+            }
+            p, li {
+                font-size: 0.9rem;
+            }
+            ul {
+                padding-left: 1.25rem;
+            }
+            .back-btn {
+                width: 100%;
+                max-width: none;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 12px;
+            }
+            h1 {
+                font-size: 1.35rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            p, li {
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (hover: none) and (pointer: coarse) {
+            .back-btn {
+                min-height: 44px;
+            }
+            a {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="lang"><a href="/privacy-policy.html">TR</a> · <strong>EN</strong> · <a href="/privacy-policy-ar.html">AR</a></div>
-    <a href="/senkimsin-privacy/en/">← Support Home</a>
-    <h1>Privacy Policy</h1>
-    <div class="card">
-      <h2>Data We Process</h2>
-      <p>We process the minimum data necessary for core functionality. Details and purposes are explained on this page.</p>
+    <div class="container">
+        <button class="back-btn" onclick="window.history.back()">← Go Back</button>
+        
+        <h1>Privacy Policy</h1>
+        <p><strong>Last updated:</strong> November 21, 2025</p>
+
+        <h2>1. Information Collected</h2>
+        <p><strong>IMPORTANT:</strong> All your personal information is stored and processed only on your device. We cannot access this data and do not store it on our servers.</p>
+        <p>The Who Are You application collects the following information:</p>
+        <ul>
+            <li><strong>Personal Information:</strong> Name, birth date, birth place, gender (only on your device)</li>
+            <li><strong>Photograph:</strong> Profile photo uploaded by user (optional, only on your device)</li>
+            <li><strong>Child Information:</strong> Child name, birth date, gender (for child development analysis, only on your device)</li>
+            <li><strong>Partner Information:</strong> Partner name, birth date (for compatibility analysis, only on your device)</li>
+            <li><strong>Email Address:</strong> For sending feedback (optional, only sent via EmailJS)</li>
+            <li><strong>Device Information:</strong> Platform, screen size, operating system (anonymous, only on your device)</li>
+            <li><strong>Performance Data:</strong> FPS, memory usage, battery level, network type (anonymous, only on your device)</li>
+            <li><strong>Session Information:</strong> Session duration, used features (anonymous, only on your device)</li>
+            <li><strong>Analytics Data:</strong> Anonymous usage statistics (no personal data)</li>
+        </ul>
+
+        <h2>2. Use of Information</h2>
+        <p><strong>IMPORTANT:</strong> All your personal data is processed only on your device and is not sent to our servers. We cannot access or see this data. Collected information is used for the following purposes:</p>
+        <ul>
+            <li><strong>Numerical Analysis Calculations:</strong> Personality number, life path, soul urge, lucky numbers, colors and days calculations (only on your device)</li>
+            <li><strong>Personal Analysis:</strong> Personal analysis chart, personality profile characteristics, planetary positions, life areas analysis, compatibility factors analysis, animal spirit personality, career paths (only on your device)</li>
+            <li><strong>Routine Planning:</strong> Age-specific daily routines and time-framed action plans (only on your device)</li>
+            <li><strong>Compatibility Analysis:</strong> Family compatibility, marriage analysis, child development analysis (only on your device)</li>
+            <li><strong>AI-Powered Analysis:</strong> AI-enhanced personality analysis (only on your device)</li>
+            <li><strong>3D Visualization:</strong> Interactive 3D personal analysis chart and animations (only on your device)</li>
+            <li><strong>Luck and Fortune Features:</strong> Lucky numbers, colors, days and favorite gifts (only on your device)</li>
+            <li><strong>Future Predictions:</strong> Yearly, monthly, weekly and daily personalized predictions (only on your device)</li>
+            <li><strong>Motivation and Inspiration:</strong> Personalized motivational quotes and categories (only on your device)</li>
+            <li><strong>Personalized Results:</strong> Custom recommendations and guidance (only on your device)</li>
+            <li><strong>Multi-language Support:</strong> Turkish, English, Arabic language preferences (only on your device)</li>
+            <li><strong>Local Storage:</strong> Your results are stored on your device for later viewing</li>
+            <li><strong>Feedback System:</strong> Processing user feedback via EmailJS (only for sending)</li>
+            <li><strong>Performance Improvement:</strong> App optimization with anonymous performance data (only on your device)</li>
+            <li><strong>Mobile Compatibility:</strong> Platform-specific optimization with device information (only on your device)</li>
+            <li><strong>Photo Optimization:</strong> Optimizing user photos on device (only on your device)</li>
+            <li><strong>Anonymous Analytics:</strong> Only general usage statistics (no personal data)</li>
+        </ul>
+
+        <h2>3. Information Sharing</h2>
+        <p><strong>IMPORTANT:</strong> Since your personal information is not stored on our servers, it cannot be shared with third parties. We cannot access this data, so we cannot share it. Your data is not shared with artificial intelligence (AI) services, analytics platforms, or any other third-party services. All data is stored locally on your device only. Only:</p>
+        <ul>
+            <li><strong>Social Media Sharing:</strong> You can share your results on social media when you choose (completely under your control)</li>
+            <li><strong>Feedback Submission:</strong> When sending feedback via EmailJS (only for sending)</li>
+            <li><strong>Legal Requirements:</strong> In case of legal obligation (but we have no personal data)</li>
+            <li><strong>Anonymous Statistics:</strong> Only general usage statistics (no personal data)</li>
+        </ul>
+
+        <h2>4. Data Storage and Security</h2>
+        <p><strong>IMPORTANT:</strong> Our application does not store user data on our servers. All your personal information is stored and processed only on your device (browser local storage). We cannot access, see, or store this data.</p>
+        <ul>
+            <li><strong>Local Storage:</strong> Your data is stored only on your device</li>
+            <li><strong>No Server Data:</strong> No personal information is sent to our servers</li>
+            <li><strong>No Access:</strong> We have no access to your personal data</li>
+            <li><strong>Security:</strong> Your data is protected by your device's security features</li>
+            <li><strong>Deletion:</strong> When you delete the app, all your data is also deleted</li>
+            <li><strong>User Control:</strong> All your data is completely under your control</li>
+        </ul>
+
+        <h2>5. Third-Party Services</h2>
+        <p><strong>IMPORTANT:</strong> Our application uses the following third-party services, but your personal data is not sent to these services:</p>
+        <ul>
+            <li><strong>EmailJS:</strong> For sending feedback emails (only for sending)</li>
+            <li><strong>Capacitor:</strong> For accessing mobile device features (anonymous device information)</li>
+            <li><strong>Web Share API:</strong> For social media sharing (completely under your control)</li>
+        </ul>
+
+        <h2>6. Cookies</h2>
+        <p>The application uses necessary cookies for basic functionality. All cookies are stored only on your device.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p><strong>IMPORTANT:</strong> We do not collect any information from children under 13. Our app does not collect any data. However, for the child development analysis feature, parents can enter child information. In this case:</p>
+        <ul>
+            <li>Child information is used only for analysis purposes (only on your device)</li>
+            <li>Data is stored only on the parent's device (not on servers)</li>
+            <li>We cannot access or see child information</li>
+            <li>Child information is not shared without parent consent</li>
+            <li>Child information is not shared on social media</li>
+            <li>When the app is deleted, child data is also automatically deleted</li>
+        </ul>
+
+        <h2>8. User Rights (GDPR/KVKK)</h2>
+        <p><strong>IMPORTANT:</strong> Since your data is stored only on your device, we have no access to this data. Therefore:</p>
+        <ul>
+            <li><strong>No Data Access:</strong> We cannot access any of your personal data</li>
+            <li><strong>No Data Viewing:</strong> We cannot see your data</li>
+            <li><strong>No Data Processing:</strong> We do not process your data on our servers</li>
+            <li><strong>No Data Storage:</strong> We do not store your data on our servers</li>
+            <li><strong>No Data Sharing:</strong> We cannot share your data with third parties</li>
+        </ul>
+        <p><strong>User Control:</strong> All your data is completely under your control. You can delete all your data by deleting the app. We cannot provide data management services because we cannot access your data.</p>
+
+        <h2>9. Legal Basis</h2>
+        <p><strong>IMPORTANT:</strong> Since we do not process your personal data, no legal basis is required. Only:</p>
+        <ul>
+            <li><strong>Anonymous Statistics:</strong> General usage statistics (no personal data)</li>
+            <li><strong>Technical Cookies:</strong> Necessary cookies for app functionality (only on your device)</li>
+            <li><strong>Legal Obligation:</strong> Fulfillment of legal requirements (no data)</li>
+        </ul>
+
+        <h2>10. Data Controllers</h2>
+        <p><strong>IMPORTANT:</strong> Since we do not process your personal data, there is no data controller status.</p>
+        <ul>
+            <li><strong>App Developer:</strong> Sen Kimsin Application</li>
+            <li><strong>Contact:</strong> app.senkimsin@gmail.com</li>
+            <li><strong>Address:</strong> Republic of Turkey</li>
+            <li><strong>Activity:</strong> Entertainment-based app development (no data processing)</li>
+            <li><strong>Data Access:</strong> We have no access to your personal data</li>
+        </ul>
+
+        <h2>11. Cookie Policy</h2>
+        <p><strong>IMPORTANT:</strong> Our application uses the following types of cookies, but all cookies are stored only on your device:</p>
+        <ul>
+            <li><strong>Essential Cookies:</strong> Required for basic application functionality (only on your device)</li>
+            <li><strong>Performance Cookies:</strong> Analyze application performance (anonymous, only on your device)</li>
+            <li><strong>Functional Cookies:</strong> User preferences like language choice, theme settings (only on your device)</li>
+        </ul>
+        <p><strong>Cookie Management:</strong> You can manage cookies through your browser settings. We cannot access your cookie data.</p>
+
+        <h2>12. Data Security Measures</h2>
+        <p><strong>IMPORTANT:</strong> Since we do not process your personal data, we do not need to take data security measures. However:</p>
+        <ul>
+            <li><strong>App Security:</strong> Measures for secure app operation</li>
+            <li><strong>Secure Communication:</strong> Use of HTTPS protocol</li>
+            <li><strong>Code Security:</strong> Secure code development practices</li>
+            <li><strong>Regular Updates:</strong> App security updates</li>
+        </ul>
+        <p><strong>User Responsibility:</strong> The security of your data is entirely your responsibility. We cannot provide security because we cannot access your data.</p>
+
+        <h2>13. International Data Transfer</h2>
+        <p><strong>IMPORTANT:</strong> Your data is not transferred to any country. All operations take place in Turkey. We cannot transfer your data because we cannot access it.</p>
+
+        <h2>14. Data Retention Periods</h2>
+        <p><strong>IMPORTANT:</strong> Since we do not store your personal data, there are no retention periods. Only:</p>
+        <ul>
+            <li><strong>Anonymous Statistics:</strong> 24 months (no personal data)</li>
+            <li><strong>Cookie Data:</strong> According to your browser settings (only on your device)</li>
+            <li><strong>User Data:</strong> Only on user's device (we have no access)</li>
+            <li><strong>Feedback Data:</strong> 24 months (on EmailJS servers, only for sending)</li>
+        </ul>
+
+        <h2>15. Changes</h2>
+        <p>This policy may be updated. Important changes are announced within the application. The last update date is indicated at the beginning of the page.</p>
+
+        <h2>16. Contact and Complaints</h2>
+        <p><strong>App Developer Contact:</strong></p>
+        <ul>
+            <li><strong>Email:</strong> app.senkimsin@gmail.com</li>
+            <li><strong>Subject:</strong> Write with "App Support" in the subject line</li>
+        </ul>
+        <p><strong>IMPORTANT:</strong> Since we do not process your personal data, there is no right to complain to the Personal Data Protection Authority (KVKK). We can only provide technical support for the app. We cannot help with data management because we cannot access your data.</p>
+
+        <h2>17. Artificial Intelligence and Machine Learning</h2>
+        <p><strong>IMPORTANT:</strong> Our application uses artificial intelligence technologies, but all AI processing occurs only on your device:</p>
+        <ul>
+            <li><strong>Local AI Processing:</strong> All AI analyses are performed on your device</li>
+            <li><strong>No Data Transmission:</strong> Your data is not sent to servers for AI processing</li>
+            <li><strong>Personalized Analysis:</strong> AI uses only the data on your device</li>
+            <li><strong>Privacy Protection:</strong> AI models do not learn or store your personal data</li>
+            <li><strong>Offline Operation:</strong> AI features work without internet connection</li>
+        </ul>
+
+        <h2>18. Social Media Integration</h2>
+        <p><strong>IMPORTANT:</strong> Social media sharing features are completely under your control:</p>
+        <ul>
+            <li><strong>Optional Sharing:</strong> Sharing only occurs when you choose to do so</li>
+            <li><strong>Data Control:</strong> You determine what content to share</li>
+            <li><strong>Platform Selection:</strong> You choose which platform to share on</li>
+            <li><strong>Reversible:</strong> You can delete shared content whenever you want</li>
+            <li><strong>Third-Party Policies:</strong> The privacy policies of platforms you share on apply</li>
+        </ul>
+
+        <h2>19. Mobile Application Special Cases</h2>
+        <p><strong>IMPORTANT:</strong> The mobile app version has additional features:</p>
+        <ul>
+            <li><strong>Device Permissions:</strong> Gallery access (only for photo selection, completely optional). The app does not require camera permission and does not request camera access.</li>
+            <li><strong>Photo Selection:</strong> The app uses HTML5 file input to allow you to select photos from your gallery. It does not require camera permission. On native platforms, Capacitor Camera plugin may be used as a fallback for better user experience (gallery access only, does not require camera permission).</li>
+            <li><strong>iOS:</strong> The iOS app does not request camera permission. Only gallery access is optionally requested. The app works with full functionality without camera permission.</li>
+            <li><strong>Android:</strong> The Android app does not request camera permission. Only gallery access is optionally requested. The app works with full functionality without camera permission.</li>
+            <li><strong>Local Storage:</strong> Uses your mobile device's local storage</li>
+            <li><strong>Offline Operation:</strong> Full functionality without internet</li>
+            <li><strong>Security:</strong> Protected by your mobile device's security features</li>
+        </ul>
+
+        <h2>20. Multi-Language Support</h2>
+        <p><strong>IMPORTANT:</strong> Our application serves in 3 languages:</p>
+        <ul>
+            <li><strong>Supported Languages:</strong> Turkish, English, Arabic</li>
+            <li><strong>Language Preference:</strong> Your chosen language is stored only on your device</li>
+            <li><strong>Translation Quality:</strong> All translations are professionally prepared</li>
+            <li><strong>Cultural Adaptation:</strong> Cultural features are considered for each language</li>
+            <li><strong>Updates:</strong> Language updates are applied automatically</li>
+        </ul>
+
+        <h2>21. Performance Monitoring and Analytics</h2>
+        <p><strong>IMPORTANT:</strong> Anonymous data is collected to improve app performance:</p>
+        <ul>
+            <li><strong>Anonymous Metrics:</strong> Speed, memory usage, error rates (no personal data)</li>
+            <li><strong>Device Information:</strong> Model, operating system version (anonymous)</li>
+            <li><strong>Usage Statistics:</strong> Which features are used how often (anonymous)</li>
+            <li><strong>Error Reports:</strong> For detecting technical issues (no personal data)</li>
+            <li><strong>Privacy:</strong> All analytics data is anonymous and contains no personal identity</li>
+        </ul>
+
+        <h2>22. Effective Date</h2>
+        <p>This privacy policy is effective as of November 21, 2025.</p>
     </div>
-    <div class="card">
-      <h2>Contact</h2>
-      <p>For privacy requests: <a href="mailto:app.senkimsin@gmail.com">app.senkimsin@gmail.com</a></p>
-    </div>
-  </div>
 </body>
 </html>
-

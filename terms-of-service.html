@@ -5,32 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kullanım Şartları - Sen Kimsin</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
             background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
             color: white;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .container {
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
+            padding: 20px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
-        h1, h2 {
+        h1 {
             color: #8b5cf6;
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #8b5cf6;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
         .back-btn {
             background: #8b5cf6;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             margin-bottom: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            max-width: 200px;
+            transition: background-color 0.2s, transform 0.1s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .back-btn:hover {
+            background: #7c3aed;
+        }
+        .back-btn:active {
+            transform: scale(0.98);
         }
         .disclaimer {
             background: rgba(255, 193, 7, 0.2);
@@ -38,6 +79,76 @@
             padding: 15px;
             border-radius: 8px;
             margin: 20px 0;
+            font-size: 0.95rem;
+        }
+        strong {
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+                margin-top: 1.25rem;
+            }
+            p, li {
+                font-size: 0.9rem;
+            }
+            ul {
+                padding-left: 1.25rem;
+            }
+            .back-btn {
+                width: 100%;
+                max-width: none;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+            .disclaimer {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 12px;
+            }
+            h1 {
+                font-size: 1.35rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            p, li {
+                font-size: 0.85rem;
+            }
+            .disclaimer {
+                padding: 10px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (hover: none) and (pointer: coarse) {
+            .back-btn {
+                min-height: 44px;
+            }
+            a {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -46,21 +157,25 @@
         <button class="back-btn" onclick="window.history.back()">← Geri Dön</button>
         
         <h1>Kullanım Şartları</h1>
-        <p><strong>Son güncelleme:</strong> 12 Eylül 2025</p>
+        <p><strong>Son güncelleme:</strong> 21 Kasım 2025</p>
 
         <div class="disclaimer">
             <h3>⚠️ Önemli Uyarı</h3>
-            <p>Bu uygulama sadece eğlence amaçlıdır. Sunulan sonuçlar bilimsel değildir ve gerçek hayat kararlarınızı etkilememelidir. Numeroloji ve astroloji, eğlence ve kendini tanıma aracı olarak kullanılmalıdır.</p>
+            <p>Bu uygulama sadece eğlence amaçlıdır. Sunulan sonuçlar bilimsel değildir ve gerçek hayat kararlarınızı etkilememelidir. Kişisel analiz, rutin planlama ve rehberlik özellikleri eğlence ve kendini tanıma aracı olarak kullanılmalıdır.</p>
         </div>
 
         <h2>1. Hizmet Tanımı</h2>
         <p>Sen Kimsin, aşağıdaki özellikleri sunan bir eğlence uygulamasıdır:</p>
         <ul>
-            <li><strong>Numeroloji Analizleri:</strong> Kişilik sayısı, yaşam yolu, ruh arzusu hesaplamaları</li>
-            <li><strong>Astroloji Özellikleri:</strong> Doğum haritası, burç analizi, gezegen pozisyonları</li>
-            <li><strong>Uyumluluk Analizleri:</strong> Aşk uyumluluğu, evlilik analizi, çocuk astrolojisi</li>
+            <li><strong>Sayısal Analiz Hesaplamaları:</strong> Kişilik sayısı, yaşam yolu, ruh arzusu, şanslı sayılar, renkler ve günler hesaplamaları</li>
+            <li><strong>Kişisel Analiz Özellikleri:</strong> Kişisel analiz haritası, kişilik profili analizi, gezegen pozisyonları, yaşam alanları analizi, uyum faktörleri analizi, hayvan ruhu kişiliği, kariyer yolları</li>
+            <li><strong>Rutin Planlama:</strong> Yaşa özel günlük rutinler ve zaman çerçeveli aksiyon planları</li>
+            <li><strong>Uyumluluk Analizleri:</strong> Aile uyumluluğu, evlilik analizi, çocuk gelişimi analizi</li>
             <li><strong>AI Destekli Analizler:</strong> Yapay zeka ile güçlendirilmiş kişilik analizi</li>
-            <li><strong>3D Görselleştirme:</strong> İnteraktif doğum haritası ve animasyonlar</li>
+            <li><strong>3D Görselleştirme:</strong> İnteraktif kişisel analiz haritası ve animasyonlar</li>
+            <li><strong>Şans ve Uğur Özellikleri:</strong> Uğurlu sayılar, renkler, günler ve favori hediyeler</li>
+            <li><strong>Gelecek Tahminleri:</strong> Yıllık, aylık, haftalık ve günlük kişiselleştirilmiş tahminler</li>
+            <li><strong>Motivasyon ve İlham:</strong> Kişiselleştirilmiş motivasyon sözleri ve kategoriler</li>
             <li><strong>Çoklu Dil Desteği:</strong> Türkçe, İngilizce, Arapça dil seçenekleri</li>
             <li><strong>Mobile Uygulama:</strong> Android ve iOS platformları için uygulama</li>
         </ul>
@@ -71,7 +186,7 @@
             <li>Başkalarının haklarını ihlal etmemelisiniz</li>
             <li>Uygulamayı kötüye kullanmamalısınız</li>
             <li>Hesaplama sonuçlarını gerçek hayat kararlarında kullanmamalısınız</li>
-            <li><strong>Çocuk Astrolojisi:</strong> Çocuk bilgilerini sadece kendi çocuklarınız için girebilirsiniz</li>
+            <li><strong>Çocuk Gelişimi Analizi:</strong> Çocuk bilgilerini sadece kendi çocuklarınız için girebilirsiniz</li>
             <li><strong>Veri Doğruluğu:</strong> Girilen bilgilerin doğru ve güncel olmasından sorumlusunuz</li>
             <li><strong>Sosyal Paylaşım:</strong> Paylaştığınız içeriklerden siz sorumlusunuz</li>
             <li><strong>Yaş Sınırı:</strong> 13 yaş altı kullanıcılar ebeveyn gözetiminde kullanabilir</li>
@@ -154,7 +269,7 @@
         <h2>14. Geçici Hükümler</h2>
         <p>Bu şartların geçerliliği:</p>
         <ul>
-            <li><strong>Yürürlük Tarihi:</strong> 12 Eylül 2025</li>
+            <li><strong>Yürürlük Tarihi:</strong> 21 Kasım 2025</li>
             <li><strong>Güncellemeler:</strong> Şartlar güncellenebilir, değişiklikler duyurulur</li>
             <li><strong>Kabul:</strong> Uygulamayı kullanarak bu şartları kabul etmiş olursunuz</li>
             <li><strong>Bölünebilirlik:</strong> Bir maddenin geçersizliği diğerlerini etkilemez</li>
@@ -183,7 +298,10 @@
         <h2>17. Mobil Uygulama Özel Şartları</h2>
         <p>Mobil uygulama versiyonu için ek kurallar:</p>
         <ul>
-            <li><strong>Cihaz İzinleri:</strong> Gerekli izinleri vermeniz gerekebilir</li>
+            <li><strong>Cihaz İzinleri:</strong> Galeri erişimi (sadece fotoğraf seçme için, tamamen isteğe bağlı). Uygulama kamera izni gerektirmez ve kamera erişimi talep etmez.</li>
+            <li><strong>Fotoğraf Seçme:</strong> Uygulama HTML5 file input kullanarak galeriden fotoğraf seçmenize olanak tanır. Kamera izni gerektirmez. Native platformlarda daha iyi kullanıcı deneyimi için Capacitor Camera plugin fallback olarak kullanılabilir (sadece galeri erişimi, kamera izni gerektirmez).</li>
+            <li><strong>iOS:</strong> iOS uygulamasında kamera izni talep edilmez. Sadece galeri erişimi isteğe bağlı olarak talep edilir.</li>
+            <li><strong>Android:</strong> Android uygulamasında kamera izni talep edilmez. Sadece galeri erişimi isteğe bağlı olarak talep edilir.</li>
             <li><strong>Depolama:</strong> Uygulama cihazınızın depolama alanını kullanır</li>
             <li><strong>Güncellemeler:</strong> Uygulama güncellemelerini kabul etmelisiniz</li>
             <li><strong>Offline Kullanım:</strong> İnternet olmadan da kullanabilirsiniz</li>

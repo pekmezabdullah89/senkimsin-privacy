@@ -5,32 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Who Are You</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
             background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
             color: white;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .container {
             background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
+            padding: 20px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
-        h1, h2 {
+        h1 {
             color: #8b5cf6;
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #8b5cf6;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
         .back-btn {
             background: #8b5cf6;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             margin-bottom: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            max-width: 200px;
+            transition: background-color 0.2s, transform 0.1s;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .back-btn:hover {
+            background: #7c3aed;
+        }
+        .back-btn:active {
+            transform: scale(0.98);
         }
         .disclaimer {
             background: rgba(255, 193, 7, 0.2);
@@ -38,6 +79,76 @@
             padding: 15px;
             border-radius: 8px;
             margin: 20px 0;
+            font-size: 0.95rem;
+        }
+        strong {
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 12px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+                margin-top: 1.25rem;
+            }
+            p, li {
+                font-size: 0.9rem;
+            }
+            ul {
+                padding-left: 1.25rem;
+            }
+            .back-btn {
+                width: 100%;
+                max-width: none;
+                padding: 14px 20px;
+                font-size: 1rem;
+            }
+            .disclaimer {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                padding: 12px;
+            }
+            h1 {
+                font-size: 1.35rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            p, li {
+                font-size: 0.85rem;
+            }
+            .disclaimer {
+                padding: 10px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (hover: none) and (pointer: coarse) {
+            .back-btn {
+                min-height: 44px;
+            }
+            a {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -46,21 +157,25 @@
         <button class="back-btn" onclick="window.history.back()">← Go Back</button>
         
         <h1>Terms of Service</h1>
-        <p><strong>Last updated:</strong> September 12, 2025</p>
+        <p><strong>Last updated:</strong> November 21, 2025</p>
 
         <div class="disclaimer">
             <h3>⚠️ Important Warning</h3>
-            <p>This application is for entertainment purposes only. The results provided are not scientific and should not influence your real-life decisions. Numerology and astrology should be used as entertainment and self-discovery tools.</p>
+            <p>This application is for entertainment purposes only. The results provided are not scientific and should not influence your real-life decisions. Personal analysis, routine planning, and guidance features should be used as entertainment and self-discovery tools.</p>
         </div>
 
         <h2>1. Service Description</h2>
         <p>Who Are You is an entertainment application that offers the following features:</p>
         <ul>
-            <li><strong>Numerology Analysis:</strong> Personality number, life path, soul urge calculations</li>
-            <li><strong>Astrology Features:</strong> Birth chart, zodiac analysis, planetary positions</li>
-            <li><strong>Compatibility Analysis:</strong> Love compatibility, marriage analysis, child astrology</li>
+            <li><strong>Numerical Analysis Calculations:</strong> Personality number, life path, soul urge, lucky numbers, colors and days calculations</li>
+            <li><strong>Personal Analysis Features:</strong> Personal analysis chart, personality profile analysis, planetary positions, life areas analysis, compatibility factors analysis, animal spirit personality, career paths</li>
+            <li><strong>Routine Planning:</strong> Age-specific daily routines and time-framed action plans</li>
+            <li><strong>Compatibility Analysis:</strong> Family compatibility, marriage analysis, child development analysis</li>
             <li><strong>AI-Powered Analysis:</strong> Artificial intelligence-enhanced personality analysis</li>
-            <li><strong>3D Visualization:</strong> Interactive birth chart and animations</li>
+            <li><strong>3D Visualization:</strong> Interactive personal analysis chart and animations</li>
+            <li><strong>Luck and Fortune Features:</strong> Lucky numbers, colors, days and favorite gifts</li>
+            <li><strong>Future Predictions:</strong> Yearly, monthly, weekly and daily personalized predictions</li>
+            <li><strong>Motivation and Inspiration:</strong> Personalized motivational quotes and categories</li>
             <li><strong>Multi-Language Support:</strong> Turkish, English, Arabic language options</li>
             <li><strong>Mobile Application:</strong> Android and iOS platform applications</li>
         </ul>
@@ -71,7 +186,7 @@
             <li>You must not violate the rights of others</li>
             <li>You must not misuse the application</li>
             <li>Calculation results should not be used in real-life decisions</li>
-            <li><strong>Child Astrology:</strong> You can only enter child information for your own children</li>
+            <li><strong>Child Development Analysis:</strong> You can only enter child information for your own children</li>
             <li><strong>Data Accuracy:</strong> You are responsible for the accuracy and currency of entered information</li>
             <li><strong>Social Sharing:</strong> You are responsible for the content you share</li>
             <li><strong>Age Limit:</strong> Users under 13 can use under parental supervision</li>
@@ -154,7 +269,7 @@
         <h2>14. Temporary Provisions</h2>
         <p>Validity of these terms:</p>
         <ul>
-            <li><strong>Effective Date:</strong> September 12, 2025</li>
+            <li><strong>Effective Date:</strong> November 21, 2025</li>
             <li><strong>Updates:</strong> Terms may be updated, changes are announced</li>
             <li><strong>Acceptance:</strong> You accept these terms by using the application</li>
             <li><strong>Severability:</strong> Invalidity of one provision does not affect others</li>
@@ -183,7 +298,10 @@
         <h2>17. Mobile Application Special Terms</h2>
         <p>Additional rules for the mobile application version:</p>
         <ul>
-            <li><strong>Device Permissions:</strong> You may need to grant necessary permissions</li>
+            <li><strong>Device Permissions:</strong> Gallery access (only for photo selection, completely optional). The app does not require camera permission and does not request camera access.</li>
+            <li><strong>Photo Selection:</strong> The app uses HTML5 file input to allow you to select photos from your gallery. It does not require camera permission. On native platforms, Capacitor Camera plugin may be used as a fallback for better user experience (gallery access only, does not require camera permission).</li>
+            <li><strong>iOS:</strong> The iOS app does not request camera permission. Only gallery access is optionally requested.</li>
+            <li><strong>Android:</strong> The Android app does not request camera permission. Only gallery access is optionally requested.</li>
             <li><strong>Storage:</strong> The application uses your device's storage space</li>
             <li><strong>Updates:</strong> You must accept application updates</li>
             <li><strong>Offline Usage:</strong> You can use without internet</li>
